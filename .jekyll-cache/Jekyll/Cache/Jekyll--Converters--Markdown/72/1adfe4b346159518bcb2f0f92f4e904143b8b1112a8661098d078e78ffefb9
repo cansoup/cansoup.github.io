@@ -1,81 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
-    
-        <title>Ch18. 함수와 일급 객체</title>
-		<link rel="stylesheet" type="text/css" href="/assets/css/002.css">
-    
-	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-	<script src="/assets/js/highlight.pack.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body>
-	<div class="wrapper">
-		<div class="default_title">
-			<img src="/assets/img/mycomputer.png" />
-			
-				<h1>Your Site Name</h1>
-			
-		</div>
-		<ul class="topbar">
-	<a href="/me"><li><u>A</u>bout</li></a>
-	<!-- <a href="http://twitter.com/h01000110" target="_blank"><li><u>T</u>witter</li></a>
-	<a href="http://soundcloud.com/h01000110" target="_blank"><li><u>S</u>oundcloud</li></a> -->
-</ul>
-		<div class="tag_list">
-			<ul id="tag-list">
-				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
-			<ul>
-				
-				
-				<li><a href="/tag/jsdeepdive/" title="jsdeepdive"><img src="/assets/img/folder.ico" />jsdeepdive</a></li>
-				
-				<li><a href="/tag/tag1/" title="tag1"><img src="/assets/img/folder.ico" />tag1</a></li>
-				
-				<li><a href="/tag/tag3/" title="tag3"><img src="/assets/img/folder.ico" />tag3</a></li>
-				
-			</ul>
-				</li>
-			</ul>
-		</div>
-		<div class="post_list">
-			
-				<ul>
-					
-					<li><a href="/20220324/ch18-%ED%95%A8%EC%88%98%EC%99%80-%EC%9D%BC%EA%B8%89-%EA%B0%9D%EC%B2%B4" title="Ch18. 함수와 일급 객체"><img src="/assets/img/file.ico" title="Ch18. 함수와 일급 객체" />Ch18. 함수와 일급 객체</a></li>
-					
-					<li><a href="/20170916/markdown-test-page" title="Markdown Test Page"><img src="/assets/img/file.ico" title="Markdown Test Page" />Markdown Test Page</a></li>
-					
-				</ul>
-			
-		</div>
-		<div class="post_total">
-			
-				<div class="left">2 object(s)</div>
-			
-			<div class="right">&nbsp;</div>
-		</div>
-	</div>
-	
-        <div class="content">
-			<div class="post_title">
-				<img src="/assets/img/file.png" />
-				<h1>Ch18. 함수와 일급 객체</h1>
-				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
-				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
-				<div class="btn"><span class="fa fa-window-minimize"></span></div>
-			</div>
-			<ul class="topbar">
-				<li>March 24, 2022</li>
-			</ul>
-			<div class="post_content">
-        		<h2 id="181-일급-객체">18.1 일급 객체</h2>
+I"�<h2 id="181-일급-객체">18.1 일급 객체</h2>
 
 <ul>
   <li>무명의 리터럴로 생성할 수 있다. 즉, 런타임에 생성 가능하다.</li>
@@ -145,9 +68,9 @@ console.log(decreaser); /* -1 */
 <p>함수는 일반 객체에는 없는 고유의 프로퍼티를 소유한다.</p>
 
 <ul>
-  <li>함수 객체 고유의 프로퍼티 : <strong>arguments</strong>, <strong>caller</strong>, <strong>length</strong>,  <strong>name</strong>, <strong>prototype</strong></li>
-  <li><strong>__proto__</strong> 는  Object.prototype 객체의 접근자 프로퍼티이다.
-<strong>square()</strong> 는 Object.prototype 객체로부터 <code>__proto__</code> 접근자 프로퍼티를 상속받는다.
+  <li>함수 객체 고유의 프로퍼티 : <strong>arguments</strong>, <code>caller</code>, <code>length</code>,  <code>name</code>, <code>prototype</code></li>
+  <li><code>__proto__</code> 는  Object.prototype 객체의 접근자 프로퍼티이다.
+<code>square()</code> 는 Object.prototype 객체로부터 <code>__proto__</code> 접근자 프로퍼티를 상속받는다.
     <ol>
       <li>arguments 프로퍼티</li>
     </ol>
@@ -207,24 +130,4 @@ console.log(decreaser); /* -1 */
 </ol>
 
 <p><a href="#top">[Top]</a></p>
-
-				
-					<!-- <br>
-<hr>
-<br>
-<div class="donate">
-	<p>Did you like of something here? How about helping me buy some game?<br>
-	I'll appreciate it!</p>
-	<p>Bitcoin Wallet <i class="fa fa-btc"></i> 1Agt7r7aCAeWk5DyXXNyJXAXC4xxysiWjJ<br>Ethereum Wallet <i class="fa fa-money"></i> 0x19BD447c94499BdcA154Dc1BeF9FCf1f4c427C16</p>
-</div> -->
-				
-			</div>
-		</div>
-    
-	<script src="/assets/js/001.js"></script>
-	<script src="/assets/js/002.js"></script>
-	<div class="footer">
-		<p>Created by <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a> | Code licensed under <a href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE" target="_blank">MIT License</a></p>
-	</div>
-</body>
-</html>
+:ET
