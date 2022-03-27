@@ -6,6 +6,7 @@ baseurl:
 name: Cansoup
 description: Your description here
 google_verification: null
+future: true
 
 
 # File management
