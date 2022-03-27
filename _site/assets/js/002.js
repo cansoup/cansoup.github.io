@@ -4,10 +4,11 @@
 function numbers () {
 	var fields = document.getElementsByTagName("code");
 	for (field in fields) {
+    if(field === 'length')
+      return;
 		var num = 0;
 		var select = fields[field].innerText;
 		var select_f = select.split(/\n/);
-
     if (select_f.length === 1)
 			continue;
     

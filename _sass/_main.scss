@@ -2,6 +2,7 @@ body {
 	background: #d2dae0;
 	font-family: sans-serif, serif, monospace;
 	font-size: 13px;
+  line-height: 1.5;
 }
 
 .wrapper, .content {
@@ -217,6 +218,12 @@ ul.topbar {
 		font-weight: 700;
 		margin: 25px 0 5px 0;
 	}
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 12px 0 2px 0;
+  }
 
 	em {
 		font-style: italic;
@@ -436,3 +443,12 @@ ul.topbar {
 ::-webkit-scrollbar-corner {
 	background-color: #cacaca;
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+/** custom **/
+.language-plaintext.highlighter-rouge {
+  background-color: rgba(175,184,193,0.2);
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  border-radius: 2px;
+}
