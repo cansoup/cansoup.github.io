@@ -21,7 +21,7 @@ sass:
 
 # Markdown
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
-  syntax_highlighter: kimbie-light
   hard_wrap: false
