@@ -24,3 +24,4 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: kimbie-light
+  hard_wrap: false
