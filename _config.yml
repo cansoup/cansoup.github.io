@@ -5,7 +5,7 @@ baseurl:
 
 # variables
 name: Cansoup
-description: Your description here
+description: 개발블로그
 google_verification: null
 future: true
 
@@ -21,7 +21,6 @@ sass:
 
 # Markdown
 markdown: kramdown
-highlighter: rouge
 kramdown:
   input: GFM
-  hard_wrap: false
+  syntax_highlighter: rouge 
