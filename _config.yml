@@ -1,3 +1,4 @@
+title: Cansoup
 permalink: /:year:month:day/:title
 url: https://cansoup.github.io/
 baseurl:
@@ -22,6 +23,4 @@ sass:
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: "kimbie-light"
-  syntax_highlighter_opts:
-    disable : true
+  syntax_highlighter: kimbie-light
