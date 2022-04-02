@@ -1,0 +1,46 @@
+I"H<h2 id="1-함수형-자바스크립트-소개">1. 함수형 자바스크립트 소개</h2>
+
+<h3 id="14-함수형-자바스크립트를-위한-기초">1.4 함수형 자바스크립트를 위한 기초</h3>
+
+<blockquote>
+  <p>일급 함수, 클로저, 고차 함수, 콜백 패턴, 부분 적용, arguments 객체 다루기, 함수 객체의 메서드(bind, call, apply)의 기능에 대해 숙지해야 한다.</p>
+</blockquote>
+
+<p><strong>1.4.1 일급 함수</strong></p>
+
+<blockquote>
+  <p>일급 함수는 일급 객체에 포함된다.</p>
+  <ul>
+    <li>일급 객체의 조건
+      <ul>
+        <li>변수에 담을 수 있다.</li>
+        <li>함수나 메서드의 인자로 넘길 수 있다.</li>
+        <li>함수나 메서드에서 리턴할 수 있다.</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>일급 함수의 조건
+    <ul>
+      <li>아무 때나(런타임에서도) 선언 가능하다.</li>
+      <li>익명으로 선언할 수도 있다.</li>
+      <li>익명으로 선언한 함수도 함수나 메서드의 인자로 넘길 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>1.4.2 클로저</strong></p>
+
+<p><em>자바스크립트의 모든 함수는 글로벌 스코프에서 선언되거나 함수 안에서 선언된다. 따라서 자바스크립트의 모든 함수는 <code class="language-plaintext highlighter-rouge">상위 스코프</code>를 가지며, 자신이 정의되는 곳의 실행 컨텍스트 안에 있다</em></p>
+
+<ul>
+  <li>자신이 <code class="language-plaintext highlighter-rouge">생성될 때의 스코프</code>에서 알 수 있었던 변수를 기억하는 함수</li>
+  <li>함수가 진짜 클로저가 되기 위한 가장 중요한 조건은 다음과 같다
+    <blockquote>
+      <p>클로저로 만든 함수는 함수 내부에서 사용하고 있는 변수 중, <code class="language-plaintext highlighter-rouge">함수 내부에서 선언되지 않은 변수</code>가 있어야 한다. 또한 이 변수가 클로저를 생성하는 스코프에서 선언되었거나 알 수 있어야 한다.</p>
+    </blockquote>
+  </li>
+</ul>
+:ET
