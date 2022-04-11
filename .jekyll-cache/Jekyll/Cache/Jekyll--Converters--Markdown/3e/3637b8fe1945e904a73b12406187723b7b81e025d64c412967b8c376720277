@@ -1,0 +1,12 @@
+I"#<h1 id="5-프로토타입">5. 프로토타입</h1>
+
+<h2 id="51-prototype">5.1 [[Prototype]]</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 자바스크립트 객체의 내부 프로퍼티 `[[Prototype]]`는 다른 객체를 참조하는 레퍼런스로 사용한다.
+- 대부분의 객체는 생성 시점에 `[[Prototype]]` 프로퍼티에 null이 아닌 값이 할당된다.(`[[Prototype]]`이 텅 비어있는 경우도 있다!)
+![스크린샷](https://user-images.githubusercontent.com/59472641/162625301-99b7369b-75b6-4423-abd6-25bd87385c3f.png)
+- ![스크린샷](https://user-images.githubusercontent.com/59472641/162625301-99b7369b-75b6-4423-abd6-25bd87385c3f.png)
+</code></pre></div></div>
+
+<h2 id="52-클래스">5.2 클래스</h2>
+:ET

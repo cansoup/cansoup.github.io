@@ -1,0 +1,62 @@
+I"�
+<h2 id="4-클래스와-객체의-혼합">4. 클래스와 객체의 혼합</h2>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes">클래스 관련 mdn 문서</a></p>
+<blockquote>
+  <p><strong>클래스</strong>
+    - 설계도. 특성과 기능을 정의
+    - 연관된 메소드와 변수의 집합
+    - 실제로 동작 X
+    - 예) ‘휴대폰’
+  <strong>객체</strong>
+    - 구현해야할 대상
+    - 메모리를 차지 X
+    - 예) 아이폰, 갤럭시
+  <strong>인스턴스</strong>
+    - 구현해야할 대상이 실제로 구현된 사례
+    - 실제로 메모리에 할당된 상태
+    - 개념적으로 인스턴스는 객체와 같거나 객체에 포함
+  <a href="https://blog.naver.com/PostView.nhn?blogId=good_ray&amp;logNo=222069343755">출처</a></p>
+</blockquote>
+
+<h3 id="43-클래스-상속">4.3 클래스 상속</h3>
+
+<ol>
+  <li>(상대적) 다형성
+    <ul>
+      <li>한 메서드가 상위 수준의 상속 체계에서 다른 메서드를 참조할 수 있게 해주는 아이디어</li>
+      <li><code class="language-plaintext highlighter-rouge">super</code> 키워드를 사용</li>
+      <li>자바스크립트의 부모/자식 관계는 각 생성자의 <code class="language-plaintext highlighter-rouge">.prototype</code> 객체에만 기술되므로 막상 생성자 당사자는 직접적인 연관이 없으며 서로를 참조할 방법 X</li>
+      <li>자식이 부모에게 상속받은 메서드를 <code class="language-plaintext highlighter-rouge">오버라이드</code>하면 원본 메서드와 오버라이드된 메서드는 <u>각자의 길</u>을 걷게 되며 개별적으로 접근 가능</li>
+    </ul>
+  </li>
+  <li>다중 상속
+    <ul>
+      <li>자바스크립트는 기본적으로 다중 상속을 지원 X</li>
+      <li>다중 상속을 흉내내는 기능: <code class="language-plaintext highlighter-rouge">믹스인</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="44-믹스인">4.4 믹스인</h3>
+
+<p><code class="language-plaintext highlighter-rouge">믹스인</code> : 자바스크립트에서 누락된 클래스 복사 기능의 흉내</p>
+
+<ol>
+  <li>명시적 믹스인
+    <ul>
+      <li>다형성 재고
+  명시적 의사다형성은 비용이 많이 들기 때문에 지양하는 게 좋다.</li>
+      <li>사본 혼합
+  믹스인을 사용하여 복사하여도 복사되는 것은 같은 공유 함수 객체를 가리키는 <code class="language-plaintext highlighter-rouge">사본 레퍼런스</code>다.</li>
+      <li>기생 상속
+  명시적/암시적 특징을 모두 가지고 있다.</li>
+    </ul>
+  </li>
+  <li>암시적 믹스인
+    <ul>
+      <li>사용하지 않는 편이 좋다.</li>
+    </ul>
+  </li>
+</ol>
+:ET

@@ -1,0 +1,51 @@
+I"<h1 id="5-프로토타입">5. 프로토타입</h1>
+
+<h2 id="51-prototype">5.1 [[Prototype]]</h2>
+
+<ul>
+  <li>자바스크립트 객체의 내부 프로퍼티 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code>는 다른 객체를 참조하는    레퍼런스로 사용한다.</li>
+  <li>대부분의 객체는 생성 시점에 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code> 프로퍼티에 null이 아닌 값이 할당된다.(<code class="language-plaintext highlighter-rouge">[[Prototype]]</code>이 텅 비어있는 경우도 있다!)</li>
+  <li><code class="language-plaintext highlighter-rouge">myObject</code>에 <code class="language-plaintext highlighter-rouge">b</code> 프로퍼티가 존재하지 않으면 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code>링크를 따라가서 <code class="language-plaintext highlighter-rouge">b</code>가 존재하는지 살핀다.<br />
+일치하는 프로퍼티명이 나오거나 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code> 연쇄가 끝날 때까지 이 과정을 반복하다가 연쇄 끝에 이르러서도 프로퍼티가 발견되지 않으면 <code class="language-plaintext highlighter-rouge">[[Get]]</code>은 결괏값으로 <code class="language-plaintext highlighter-rouge">undefined</code>를 반환한다.
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">Object.create()</code> 특정 객체의 [[Prototype]] 링크를 가진 객체를 생성한다<br />
+ <img src="https://user-images.githubusercontent.com/59472641/162625301-99b7369b-75b6-4423-abd6-25bd87385c3f.png" alt="스크린샷" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h3 id="511-objectprototype">5.1.1 Object.prototype</h3>
+
+<ul>
+  <li>모든 자바스크립트 객체는 <code class="language-plaintext highlighter-rouge">Object.prototype</code> 객체의 <strong>자손</strong>이므로 일반 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code> 연쇄는 내장 프로토타입 <code class="language-plaintext highlighter-rouge">Object.prototype</code>에서 끝난다.</li>
+</ul>
+
+<h3 id="512-프로퍼티-세팅과-가려짐">5.1.2 프로퍼티 세팅과 가려짐</h3>
+
+<ul>
+  <li><strong>가려짐(shadowing)</strong> : 동일한 프로퍼티명이 특정 객체와 이 객체를 기점으로 한 [[Prototype]] 연쇄의 상위 수준 두 곳에서 동시에 발견되는 것
+<img src="https://user-images.githubusercontent.com/59472641/162626460-69861e4c-33a2-454e-8ece-d0cabddd8bd8.png" alt="스크린샷" /></li>
+  <li>가려짐은 이용 가치에 비해 지나치게 복잡하고 애매한 구석이 있으니 될 수 있으면 <strong>사용하지 말자</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">myObject.a++</code>를 실행했을 때 암시적인 가려짐이 발생한다.<br />
+1) [[Prototype]]을 경우하여 [[Get]]을 찾아 <code class="language-plaintext highlighter-rouge">anotherObject.a</code>에서 현재 값 2를 얻은 뒤 1만큼 증가시킨다.<br />
+2) 증가시킨 값 3을 [[Put]]으로 <code class="language-plaintext highlighter-rouge">myObject</code>에 새로운 가려짐 프로퍼티를 생성한 뒤 할당한다.<br />
+<img src="https://user-images.githubusercontent.com/59472641/162626764-236f7cdb-84ea-4eb0-9e81-426dc0d7a635.png" alt="스크린샷" /></li>
+</ul>
+
+<h2 id="52-클래스">5.2 클래스</h2>
+
+<h3 id="521-클래스-함수">5.2.1 클래스 함수</h3>
+
+<p><strong>Foo dot prototype</strong><br />
+<img src="https://user-images.githubusercontent.com/59472641/162627200-8edd68fe-13b9-4c5e-b324-1c9c4544d23e.png" alt="스크린샷" /></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">new Foo()</code>로 만들어진 모든 객체는 <code class="language-plaintext highlighter-rouge">Foo dot prototype</code>과 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code> 링크로 연결된다.
+<img src="https://user-images.githubusercontent.com/59472641/162627321-a81afc11-4102-44da-8eb8-5d19c5a9fa5e.png" alt="스크린샷" /></li>
+  <li>상속은 기본적으로 <strong>복사</strong>를 수반하지만, 자바스크립트는 객체 프로퍼티를 <strong>복사하지 않는다</strong>.</li>
+</ul>
+
+<h3 id="522-생성자">5.2.2 생성자</h3>
+
+<h3 id="523-체계">5.2.3 체계</h3>
+:ET

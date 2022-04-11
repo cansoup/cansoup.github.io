@@ -1,0 +1,17 @@
+I"�<h1 id="5-프로토타입">5. 프로토타입</h1>
+
+<h2 id="51-prototype">5.1 [[Prototype]]</h2>
+
+<ul>
+  <li>자바스크립트 객체의 내부 프로퍼티 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code>는 다른 객체를 참조하는    레퍼런스로 사용한다.</li>
+  <li>대부분의 객체는 생성 시점에 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code> 프로퍼티에 null이 아닌 값이 할당된다.(<code class="language-plaintext highlighter-rouge">[[Prototype]]</code>이 텅 비어있는 경우도 있다!)</li>
+  <li><code class="language-plaintext highlighter-rouge">myObject</code>에 <code class="language-plaintext highlighter-rouge">b</code> 프로퍼티가 존재하지 않으면 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code>링크를 따라가서 <code class="language-plaintext highlighter-rouge">b</code>가 존재하는지 살핀다. 일치하는 프로퍼티명이 나오거나 <code class="language-plaintext highlighter-rouge">[[Prototype]]</code> 연쇄가 끝날 때까지 이 과정을 반복하다가 연쇄 끝에 이르러서도 프로퍼티가 발견되지 않으면 <code class="language-plaintext highlighter-rouge">[[Get]]</code>은 결괏값으로 <code class="language-plaintext highlighter-rouge">undefined</code>를 반환한다.
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">Object.create()</code> 특정 객체의 [[Prototype]] 링크를 가진 객체를 생성한다
+ <img src="https://user-images.githubusercontent.com/59472641/162625301-99b7369b-75b6-4423-abd6-25bd87385c3f.png" alt="스크린샷" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="52-클래스">5.2 클래스</h2>
+:ET
