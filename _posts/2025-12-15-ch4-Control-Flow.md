@@ -47,13 +47,6 @@ tags: swift5
 * **Benefit:** Using guard keeps the main body of the function cleaner (no nested if statements) and makes the error handling path explicit and quick.
 ---
 
-## 🔗 Resources
-
-* [Source 1](Link)
-* [Source 2](Link)
-
----
-
 ## 🚀 Next Learning Goal
 
 * I plan to study **Functions** tomorrow.
