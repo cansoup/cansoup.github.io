@@ -29,7 +29,7 @@ tags: swift5
 |--|--|--|--|
 |`...`|Closed Range|0...5|Includes both 0 and 5. (e.g., 0, 1, 2, 3, 4, 5)|
 |`..<`|Half-Open Range|0..<5|Includes 0 but excludes 5. (e.g., 0, 1, 2, 3, 4)|
-- 
+
 - **Usage**: The half-open range (..<) is used most frequently when iterating over arrays or collections, as collections are zero-indexed and the range typically goes up to (but not including) the count of the collection.
 
 ### 3. Comparison of Loop and Control Structures
