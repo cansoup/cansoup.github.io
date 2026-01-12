@@ -3,7 +3,7 @@ layout: default
 title: "Ch5. Wide World of Functions"
 tags: swift5
 ---
-# 📅 Today I Learned (2025-12-16) - Swift Functions, Closures, & Type Aliasing
+# 📅 Today I Learned (2025-12-16) - Swift Functions, Closures, and Type Aliasing
 
 ## ✨ What I Learned Today (Key Summary)
 * Function Declaration: Explored Swift's unique syntax for declaring functions, emphasizing explicit parameter and return types.
